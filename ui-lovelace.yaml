@@ -86,7 +86,31 @@ views:
             - sensor.weather_humidity
             - sensor.weather_summary
             - sun.sun
-
+  - title: Lights
+    cards:
+      - type: custom:monster-card
+        show_empty: true
+        card:
+          type: entities
+          title: Lights
+        filter:
+          include:
+            - domain: light
+          exclude:
+            - entity_id: "*_1"
+            - entity_id: "*_2"
+            - entity_id: "*_3"
+            - entity_id: "*_4"
+            - entity_id: "*_5"
+            - entity_id: "*_6"
+      - type: custom:monster-card
+        show_empty: true
+        card:
+          type: entities
+          title: Switches
+        filter:
+          include:
+            - domain: switch
   - title: Kitchen
     cards:
       - type: entities
@@ -207,31 +231,6 @@ views:
         camera_image: camera.upstairs_hall
         show_info: true
         tap_action: dialog
-  - title: Lights
-    cards:
-      - type: custom:monster-card
-        show_empty: true
-        card:
-          type: entities
-          title: Lights
-        filter:
-          include:
-            - domain: light
-          exclude:
-            - entity_id: "*_1"
-            - entity_id: "*_2"
-            - entity_id: "*_3"
-            - entity_id: "*_4"
-            - entity_id: "*_5"
-            - entity_id: "*_6"
-      - type: custom:monster-card
-        show_empty: true
-        card:
-          type: entities
-          title: Switches
-        filter:
-          include:
-            - domain: switch
   - title: Office
     cards:
       - type: vertical-stack
