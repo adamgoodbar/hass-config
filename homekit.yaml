@@ -1,0 +1,35 @@
+auto_start: false
+filter:
+  exclude_domains:
+    - sensor
+    - binary_sensor
+    - remote
+  exclude_entities:
+  # Hue Bulbs (Included in Groups)
+    - light.office_overhead_1
+    - light.office_overhead_2
+    - light.office_overhead_3
+    - light.office_overhead_4
+    - light.master_bath_sink_1
+    - light.master_bath_sink_2
+    - light.master_bath_sink_3
+    - light.master_bath_sink_4
+    - light.master_bath_sink_5
+    - light.master_bath_sink_6
+    - light.bedroom_downlight_1
+    - light.bedroom_downlight_2
+    - light.office_bathroom_1
+    - light.office_bathroom_2
+    - light.office_bathroom_3
+    - light.half_bath_sink_1
+    - light.half_bath_sink_2
+    - light.bedroom_overhead_1
+    - light.bedroom_overhead_2
+  #Smoke Detectors
+    - switch.smoke__co_sensor_14
+    - switch.bedroom_smoke_detect_17
+  #Sensor on/offs
+    - switch.master_bath_sensor_33
+    - switch.front_porch_sensor_39
+  # Button Controls
+    - switch.fireplace_button_54

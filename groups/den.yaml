@@ -1,0 +1,22 @@
+den_view:
+  name: Den
+  view: yes
+  entities:
+    - group.den_group
+
+den_group: 
+  name: Den
+  control: hidden
+  entities: 
+    - light.den_overhead_58
+    - light.entry_overhead
+    - light.den_lamp
+    - light.reading_lamp
+    - switch.fireplace_25
+    - binary_sensor.den_left_window
+    - binary_sensor.den_right_window
+    - binary_sensor.living_room_occupancy
+    - binary_sensor.front_door_sensor
+    - camera.den
+    - lock.schlage_deadbolt_30
+    - sensor.living_room_temperature

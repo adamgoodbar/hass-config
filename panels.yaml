@@ -1,0 +1,8 @@
+  happybubbles:
+    title: 'Happy Bubbles'
+    url: 'http://hassio:5555/'
+    icon: mdi:crosshairs
+  shinobi:
+    title: 'Shinobi'
+    url: 'http://gargantubrain:8083/'
+    icon: mdi:camera

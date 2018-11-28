@@ -1,0 +1,8 @@
+presnce_group:
+  name: Presence
+  control: hidden
+  entities:
+    - device_tracker.adam_iphone
+    - device_tracker.jacquelnsiphone
+    - sensor.adams_iphone_battery_level
+    - sensor.adams_iphone_battery_state

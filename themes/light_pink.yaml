@@ -1,0 +1,12 @@
+light_pink:
+  dark-primary-color: "#ff084a"
+  primary-color: "#fc3468"
+  light-primary-color: "#ffc2cd"
+  paper-toggle-button-checked-ink-color: "#ff6289"
+  paper-toggle-button-checked-button-color: "#ff084a"
+  paper-toggle-button-checked-bar-color: "#ffc2cd"
+  paper-slider-knob-color: "#ff084a"
+  paper-slider-knob-start-color: "#ff084a"
+  paper-slider-pin-color: "#ff084a"
+  paper-slider-active-color: "#ff084a"
+  paper-slider-secondary-color: "#ff93ac"

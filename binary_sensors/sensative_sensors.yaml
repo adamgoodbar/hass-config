@@ -1,0 +1,42 @@
+  - platform: template
+    sensors:
+      den_left_window:
+        device_class: opening
+        friendly_name: "Den Window Left"
+        entity_id: sensor.den_window_left_access_control
+        value_template: "{{ states('sensor.den_window_left_access_control')|float < 23 }}"
+      den_right_window:
+        device_class: opening
+        friendly_name: "Den Window Right"
+        entity_id: sensor.den_window_right_access_control
+        value_template: "{{ states('sensor.den_window_right_access_control')|float < 23 }}"
+      bedroom_left_window:
+        device_class: opening
+        friendly_name: "Bedroom Window Left"
+        entity_id: sensor.bedroom_window_left_access_control
+        value_template: "{{ states('sensor.bedroom_window_left_access_control')|float < 23 }}"
+      bedroom_right_window:
+        device_class: opening
+        friendly_name: "Bedroom Window Right"
+        entity_id: sensor.bedroom_window_right_access_control
+        value_template: "{{ states('sensor.bedroom_window_right_access_control')|float < 23 }}"
+      diningroom_left_window:
+        device_class: opening
+        friendly_name: "Dining Room Window Left"
+        entity_id: sensor.dining_room_window_left_access_control
+        value_template: "{{ states('sensor.dining_room_window_left_access_control')|float < 23 }}"
+      diningroom_right_window:
+        device_class: opening
+        friendly_name: "Dining Room Window Right"
+        entity_id: sensor.dining_room_window_right_access_control
+        value_template: "{{ states('sensor.dining_room_window_right_access_control')|float < 23 }}"
+      office_window:
+        device_class: opening
+        friendly_name: "Office Window"
+        entity_id: sensor.office_window_access_control
+        value_template: "{{ states('sensor.office_window_access_control')|float < 23 }}"
+      kitchen_window:
+        device_class: opening
+        friendly_name: "Kitchen Window"
+        entity_id: sensor.kitchen_window_access_control
+        value_template: "{{ states('sensor.kitchen_window_access_control')|float < 23 }}"

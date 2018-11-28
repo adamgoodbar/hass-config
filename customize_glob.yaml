@@ -1,0 +1,85 @@
+ 
+#Hide the Wink Relay Sensors, only want to use buttons for events 
+  "binary_sensor.office_relay*":
+    hidden: true
+  "binary_sensor.kitchen_relay*":
+    hidden: true
+  "binary_sensor.bedroom_relay*":
+    hidden: true
+  "sensor.office_relay*":
+    hidden: true
+  "sensor.kitchen_relay*":
+    hidden: true
+  "sensor.bedroom_relay*":
+    hidden: true  
+  "binary_sensor.gang*":
+    hidden: true
+
+  #Specific Bulbs for light Groups
+  "light.office_overhead_*":
+    hidden: true
+  "light.master_bath_sink_*":
+    hidden: true
+  "light.bedroom_overhead_*":
+    hidden: true
+  "light.office_bathroom_*":
+    hidden: true
+  "light.half_bath_sink_*":
+    hidden: true
+
+  #Homebridge Exposure
+  "switch.*":
+    homebridge_hidden: false
+  "light.*":
+    homebridge_hidden: false
+  "lock.*":
+    homebridge_hidden: false
+
+#Hide the Media Players from Display
+  "media_player.plex*":
+    hidden: true
+
+#Hide the Wallmote Sensors.  Overriden for power level.
+  "sensor.aeotec_zw130_wallmote_quad_*":
+    hidden: true
+  "sensor.fibaro*":
+    hidden: true
+
+#Unwanted Sensor Readings
+  "binary_sensor.vision_zp3111_multisensor_4in1_sensor*":
+    hidden: true
+  "sensor.ecolink_motion_detector*":
+    hidden: true
+  "sensor.garage_*":
+    hidden: true
+  "sensor.hall_lamp*":
+    hidden: true
+  "sensor.tiny_tree*":
+    hidden: true
+  "sensor.front_door*":
+    hidden: true
+  "sensor.back_door*":
+    hidden: true
+  "sensor.front_porch*":
+    hidden: true
+  "sensor.server_closet*":
+    hidden: true
+  "sensor.aeotec_dsb45_water_sensor*":
+    hidden: true
+  
+#Unwanted Sensative Strip Readings
+  "binary_sensor.*_window*sensor":
+    hidden: true
+  "sensor.*_window*alarm_level":
+    hidden: true
+  "sensor.*_window*alarm_type":
+    hidden: true
+  "sensor.*_window*burglar":
+    hidden: true
+  "sensor.*_window*sourcenodeid":
+    hidden: true
+  "sensor.*_window*access_control":
+    hidden: true
+  "*bad_sensor*":
+    hidden: true
+

@@ -1,0 +1,12 @@
+home_monitor_view:
+  name: Home Monitoring
+  view: yes
+  entities:
+    - group.home_power_monitoring
+
+home_power_monitoring:
+  name: Home Power Usage
+  control: hidden
+  entities:
+    - sensor.energy_usage
+    - sensor.daily_usage

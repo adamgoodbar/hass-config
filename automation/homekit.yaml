@@ -1,0 +1,9 @@
+- id: homekitstart
+  alias: 'Start HomeKit'
+  hide_entity: True
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - delay: 00:05  # Waits 5 minutes
+    - service: homekit.start

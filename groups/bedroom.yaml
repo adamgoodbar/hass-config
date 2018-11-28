@@ -1,0 +1,32 @@
+bedroom_view:
+  name: Bedroom
+  view: yes
+  entities:
+    - group.bedroom_group
+    - group.master_bath_group
+
+bedroom_group:
+  name: Bedroom
+  control: hidden
+  entities:
+    - binary_sensor.bedroom_left_window
+    - binary_sensor.bedroom_right_window
+    - sensor.bedroom_temperature
+    - switch.bedroom_fan_switch
+    - binary_sensor.bedroom_occupancy
+    - light.bedroom_overhead
+    - light.adam_lamp
+    - light.jacqueline_lamp
+    - light.bedside_lamps
+    - light.bedroom_lamp
+    - binary_sensor.bedroom_occupancy
+
+
+master_bath_group:
+  name: Master Bathroom
+  control: hidden
+  entities:
+    - light.Master_Bath_Sink
+    - light.bathtub_light
+    - switch.master_bath_fan_49
+    - switch.master_bath_heatlamp_48

@@ -1,0 +1,32 @@
+  - platform: foscam
+    ip: 192.168.2.21
+    username: !secret foscam_username
+    password: !secret foscam_password
+    name: Kitchen
+
+  - platform: foscam
+    ip: 192.168.2.22
+    username: !secret foscam_username
+    password: !secret foscam_password
+    name: Den
+
+  - platform: foscam
+    ip: 192.168.2.23
+    username: !secret foscam_username
+    password: !secret foscam_password
+    name: Back Door
+
+  - platform: foscam
+    ip: 192.168.2.24
+    username: !secret foscam_username
+    password: !secret foscam_password
+    name: Upstairs Hall
+
+  - platform: foscam
+    ip: 192.168.2.25
+    username: !secret foscam_username
+    password: !secret foscam_password
+    name: Garage
+  
+  #- platform: ring
+

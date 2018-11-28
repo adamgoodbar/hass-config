@@ -1,0 +1,7 @@
+#- platform: pi_hole
+#  name: Pi-Hole Primary
+#  host: 192.168.1.4:8080
+
+#- platform: pi_hole
+#  name: Pi-Hole Secondary
+#  host: 192.168.1.6:8080

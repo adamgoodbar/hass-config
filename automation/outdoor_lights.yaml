@@ -1,0 +1,19 @@
+- id: "TurnLightsOnAtDusk"
+  alias: Turn on at Dusk
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '+00:00:00'
+  action:
+    service: switch.turn_on
+    data:
+      entity_id: switch.bedroom_window_light
+- id: "TurnsLightsOffat10"
+  alias: Turn off at 10 PM
+  trigger:
+      platform: time
+      at: '22:00:00'
+  action:
+    service: switch.turn_off
+    data:
+      entity_id: switch.bedroom_window_light  

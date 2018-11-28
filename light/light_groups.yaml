@@ -1,0 +1,58 @@
+- platform: group
+  name: Master Bath Sink
+  entities:
+    - light.master_bath_sink_1
+    - light.master_bath_sink_2
+    - light.master_bath_sink_3
+    - light.master_bath_sink_4
+    - light.master_bath_sink_5
+    - light.master_bath_sink_6
+
+- platform: group
+  name: Office Overhead
+  entities:
+    - light.office_overhead_1
+    - light.office_overhead_2
+    - light.office_overhead_3
+    - light.office_overhead_4
+
+- platform: group
+  name: Bedroom Lamps
+  entities:
+    - light.adam_lamp
+    - light.jacqueline_lamp
+    - light.bedroom_lamp
+
+- platform: group
+  name: Bedside Lamps
+  entities:
+    - light.adam_lamp
+    - light.jacqueline_lamp
+
+- platform: group
+  name: Bedroom Overhead
+  entities:
+    - light.bedroom_overhead_1
+    - light.bedroom_overhead_2
+
+- platform: group
+  name: Bedroom Lights
+  entities:
+    - light.bedroom_overhead_1
+    - light.bedroom_overhead_2
+    - light.adam_lamp
+    - light.jacqueline_lamp
+    - light.bedroom_lamp
+
+- platform: group
+  name: Office Bath Sink
+  entities:
+    - light.office_bathroom_1
+    - light.office_bathroom_2
+    - light.office_bathroom_3
+
+- platform: group
+  name: Half Bath Sink
+  entities:
+    - light.half_bath_sink_1
+    - light.half_bath_sink_2

@@ -1,0 +1,6 @@
+lights_view:
+  name: Lights
+  view: yes
+  entities:
+    - group.all_lights
+    - group.all_switches

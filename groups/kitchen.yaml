@@ -1,0 +1,36 @@
+kitchen_view:
+  name: Kitchen
+  view: yes
+  entities:
+    - group.kitchen_group
+    - group.dining_group
+    - group.laundry_group
+
+kitchen_group:
+  name: Kitchen
+  control: hidden
+  entities:
+    - camera.kitchen
+    - camera.back_door
+    - light.kitchen_accent
+    - light.kitchen_overhead_57
+    - light.kitchen_sink_overhead
+    - sensor.home_temperature
+    - sensor.home_humidity
+    - binary_sensor.home_occupancy
+    - binary_sensor.home_occupancy
+    - light.half_bath_sink
+
+dining_group:
+  name: Dining Room
+  entities:
+    - light.dining_room_overhead_46
+    - binary_sensor.diningroom_left_window
+    - binary_sensor.diningroom_right_window
+
+laundry_group:
+  name: Laundry Room
+  entities:
+    - switch.laundry_room_fan_12
+    - switch.laundry_room_overhead_13
+    - switch.whole_house_fan_11

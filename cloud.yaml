@@ -1,0 +1,223 @@
+alexa:
+    filter:
+      include_domains:
+        - switch
+        - light
+        - lock
+      exclude_entities:
+        - switch.aeotec_zw130_wallmote_quad_switch
+        - light.hall
+        - light.bedroom
+        - light.office
+        - light.master_bathroom
+        - light.master_bath_sink_1
+        - light.master_bath_sink_2
+        - light.master_bath_sink_3
+        - light.master_bath_sink_4
+        - light.master_bath_sink_5
+        - light.master_bath_sink_6
+        - switch.hall_lamp_switch
+        - switch.master_bath_sensor_33
+        - light.bedroom_overhead_1
+        - light.bedroom_overhead_2
+        - light.office_overhead_1
+        - light.office_overhead_2
+        - light.office_overhead_3
+        - light.office_overhead_4
+        - light.half_bath_sink_1
+        - light.half_bath_sink_2
+        - light.office_bathroom_1
+        - light.office_bathroom_2
+        - light.office_bathroom_3
+    entity_config:
+      light.kitchen_accent:
+        name: "Kitchen Accent"
+      light.adam_lamp:
+        name: "Adam Lamp"
+      light.jacqueline_lamp:
+        name: "Jacqueline Lamp"
+      switch.bedroom_fan_switch:
+        name: "Bedroom Fan"
+      light.den_overhead_58:
+        name: "Den Overhead"
+      light.dining_room_overhead_46:
+        name: "Dining Room Overhead"
+      light.entry_overhead:
+        name: "Entry Overhead"
+      switch.fireplace_25:
+        name: "Fireplace"
+      switch.tiny_tree_switch:
+        name: "Tiny Tree"
+      light.hall_overhead_level:
+        name: "Hall Overhead"
+      switch.laundry_room_fan_12:
+        name: "Laundry Room Fan"
+      switch.laundry_room_overhead_13:
+        name: "Laundry Room Overhead"
+      light.kitchen_overhead_57:
+        name: "Kitchen Overhead"
+      switch.front_porch_45:
+        name: "Front Porch Overhead"
+      switch.Whole_house_fan_11:
+        name: "Whole House Fan"
+      switch.garage_overhead:
+        name: "Garage Overhead"
+      light.christmas_tree_level:
+        name: "Christmas Tree"
+      light.wee_tree_level:
+        name: "Wee Tree"
+      light.hall_lamp:
+        name: "Hall Lamp"
+      light.bathtub_light:
+        name: "Bathtub Light"
+      light.bedroom_lamp:
+        name: "Bedroom Lamp"
+      light.office_lamp:
+        name: "Office Lamp"
+      light.desk_lamp:
+        name: "Desk Lamp"
+      light.desk_accent:
+        name: "Desk Accent"
+      light.office_tv_backlight:
+        name: "Office TV Backlight"
+      light.desk_led_strip_level:
+        name: "Desk LED Strip"
+      light.den_lamp:
+        name: "Den Lamp"
+      light.reading_lamp:
+        name: "Reading Lamp"
+      switch.master_bath_fan_49:
+        name: "Master Bath Fan"
+      switch.master_bath_heatlamp_48:
+        name: "Master Bath Heat Lamp"
+      light.entry_lamp:
+        name: "Entry Lamp"
+      light.kitchen_sink_overhead:
+        name: "Kitchen Sink Overhead"
+
+    #Group Hue Emulation and Friendly Names
+      light.bedside_lamps:
+        name: "Both Bedside Lamps"
+      light.Office_Overhead:
+        name: "Office Overhead"
+      light.Master_Bath_Sink:
+        name: "Bathroom Sink"
+      light.Half_Bath_Sink:
+        name: "Half Bath Sink"
+      light.Office_Bath_Sink:
+        name: "Office Bathroom Sink"
+      light.bedroom_overhead:
+        name: "Bedroom Overhead"
+      light.bedroom_lights:
+        name: "Bedroom Lights"
+google_actions:
+    filter:
+      include_domains:
+        - switch
+        - light
+      exclude_entities:
+        - switch.aeotec_zw130_wallmote_quad_switch
+        - light.hall
+        - light.bedroom
+        - light.office
+        - light.master_bathroom
+        - light.master_bath_sink_1
+        - light.master_bath_sink_2
+        - light.master_bath_sink_3
+        - light.master_bath_sink_4
+        - light.master_bath_sink_5
+        - light.master_bath_sink_6
+        - switch.hall_lamp_switch
+        - switch.master_bath_sensor_33
+        - light.bedroom_overhead_1
+        - light.bedroom_overhead_2
+        - light.office_overhead_1
+        - light.office_overhead_2
+        - light.office_overhead_3
+        - light.office_overhead_4
+        - light.half_bath_sink_1
+        - light.half_bath_sink_2
+        - light.office_bathroom_1
+        - light.office_bathroom_2
+        - light.office_bathroom_3
+    entity_config:
+      light.kitchen_accent:
+        name: "Kitchen Accent"
+      light.adam_lamp:
+        name: "Adam Lamp"
+      light.jacqueline_lamp:
+        name: "Jacqueline Lamp"
+      switch.bedroom_fan_switch:
+        name: "Bedroom Fan"
+      light.den_overhead_58:
+        name: "Den Overhead"
+      light.dining_room_overhead_46:
+        name: "Dining Room Overhead"
+      light.entry_overhead:
+        name: "Entry Overhead"
+      switch.fireplace_25:
+        name: "Fireplace"
+      switch.tiny_tree_switch:
+        name: "Tiny Tree"
+      light.hall_overhead_level:
+        name: "Hall Overhead"
+      switch.laundry_room_fan_12:
+        name: "Laundry Room Fan"
+      switch.laundry_room_overhead_13:
+        name: "Laundry Room Overhead"
+      light.kitchen_overhead_57:
+        name: "Kitchen Overhead"
+      switch.front_porch_45:
+        name: "Front Porch Overhead"
+      switch.Whole_house_fan_11:
+        name: "Whole House Fan"
+      switch.garage_overhead:
+        name: "Garage Overhead"
+      light.christmas_tree_level:
+        name: "Christmas Tree"
+      light.wee_tree_level:
+        name: "Wee Tree"
+      light.hall_lamp:
+        name: "Hall Lamp"
+      light.bathtub_light:
+        name: "Bathtub Light"
+      light.bedroom_lamp:
+        name: "Bedroom Lamp"
+      light.office_lamp:
+        name: "Office Lamp"
+      light.desk_lamp:
+        name: "Desk Lamp"
+      light.desk_accent:
+        name: "Desk Accent"
+      light.office_tv_backlight:
+        name: "Office TV Backlight"
+      light.desk_led_strip_level:
+        name: "Desk LED Strip"
+      light.den_lamp:
+        name: "Den Lamp"
+      light.reading_lamp:
+        name: "Reading Lamp"
+      switch.master_bath_fan_49:
+        name: "Master Bath Fan"
+      switch.master_bath_heatlamp_48:
+        name: "Master Bath Heat Lamp"
+      light.entry_lamp:
+        name: "Entry Lamp"
+      light.kitchen_sink_overhead:
+        name: "Kitchen Sink Overhead"
+
+    #Group Hue Emulation and Friendly Names
+      light.bedside_lamps:
+        name: "Both Bedside Lamps"
+      light.Office_Overhead:
+        name: "Office Overhead"
+      light.Master_Bath_Sink:
+        name: "Bathroom Sink"
+      light.Half_Bath_Sink:
+        name: "Half Bath Sink"
+      light.Office_Bath_Sink:
+        name: "Office Bathroom Sink"
+      light.bedroom_overhead:
+        name: "Bedroom Overhead"
+      light.bedroom_lights:
+        name: "Bedroom Lights"

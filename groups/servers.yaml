@@ -1,0 +1,40 @@
+server_view:
+  name: Servers
+  view: yes
+  entities:
+    - sensor.server_closet_temperature
+    - sensor.server_closet_relative_humidity
+    - sensor.plex
+    - group.ha_stats_group
+    - group.sabnzbd_group
+    - group.internet_group
+    - input_select.home_assistant_themes
+
+ha_stats_group:
+  name: Home Assistant Stats
+  control: hidden
+  entities:
+    - sensor.ha_uptime
+    - sensor.ha_installed_version
+    - sensor.ha_uptime
+
+
+sabnzbd_group:
+  name: SabNZBd
+  entities:
+    - sensor.sabnzbd_status
+    - sensor.sabnzbd_speed
+    - sensor.sabnzbd_queue
+    - sensor.sabnzbd_left
+    - sensor.sabnzbd_disk
+    - sensor.sabnzbd_disk_free
+    - sensor.sabnzdb_queue_count
+
+Internet_speed: 
+  name: Internet Speedtest
+  control: hidden
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+

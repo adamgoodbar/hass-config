@@ -1,0 +1,13 @@
+hall_view:
+  name: Hall
+  view: yes
+  entities:
+    - group.hall_group
+
+hall_group:
+  name: Hall Group
+  control: hidden
+  entities:
+    - camera.upstairs_hall
+    - light.hall_lamp
+    - light.hall_overhead_level

@@ -1,0 +1,128 @@
+  #Hide some binary sensors:
+  #Unhide and Rename once mounted.
+  binary_sensor.ecolink_motion_detector_sensor:
+    hidden: true
+  binary_sensor.front_porch_sensor:
+    hidden: true
+  binary_sensor.front_door_sensor:
+    hidden: true
+  binary_sensor.back_door_sensor:
+    hidden: true
+  binary_sensor.garage_sensor:
+    hidden: true
+  binary_sensor.server_closet_sensor:
+    hidden: true
+  
+  
+  #Overrides of Hidden Sensors from Wildcards
+  sensor.garage_temperature:
+    hidden: false
+  sensor.front_porch_luminance:
+    hidden: false
+  sensor.front_porch_burglar:
+    hidden: false
+    friendly_name: "Front Porch Motion"
+  sensor.front_porch_temperature:
+    hidden: false
+    friendly_name: "Outdoor Temperature"
+  sensor.front_porch_relative_humidity:
+    hidden: false
+    friendly_name: "Outdoor Humidity"
+  sensor.server_closet_temperature:
+    hidden: false
+  sensor.server_closet_relative_humidity:
+    hidden: false
+
+#Hide Remote features that are unneeded
+  switch.aeotec_zw130_wallmote_quad_switch:
+    hidden: true
+
+  sensor.speedtest_download:
+    friendly_name: Down (Speedtest)
+    icon: 'mdi:download'
+  sensor.speedtest_upload:
+    friendly_name: Up (Speedtest)
+    icon: 'mdi:upload'
+  sensor.speedtest_ping:
+    friendly_name: Ping (Speedtest)
+    icon: 'mdi:speedometer'
+
+#show Default Groups
+  group.all_lights:
+    friendly_name: Lights
+    hidden: false
+  group.all_switches:
+    friendly_name: Switches
+    hidden: false
+
+# Icons for Flu/Pollen
+  sensor.pollen_index:
+    icon: mdi:flower
+  sensor.pollen_level:
+    icon: mdi:flower
+  sensor.top_allergen_1:
+    icon: mdi:flower
+  sensor.top_allergen_2:
+    icon: mdi:flower
+  sensor.top_allergen_3:
+    icon: mdi:flower
+  sensor.pollen_trend:
+    icon: mdi:flower
+  sensor.pollen_outlook:
+    icon: mdi:flower
+  sensor.pollen_season:
+    icon: mdi:flower
+  sensor.pollen_index_forecast:
+    icon: mdi:flower
+  sensor.pollen_level_forecast:
+    icon: mdi:flower
+  sensor.cold__flu_percentage:
+    icon: mdi:snowflake
+  sensor.cold_flu_risk:
+    icon: mdi:snowflake
+
+
+  # Server Sensors
+  sensor.since_last_boot_templated:
+    friendly_name: 'Server Uptime'
+    emulated_hue_hidden: True
+    hidden: False
+    homebridge_hidden: True
+    icon: mdi:clock-start
+
+  sensor.ha_installed_version:
+    friendly_name: 'HA Installed Version'
+    emulated_hue_hidden: True
+    hidden: False
+    homebridge_hidden: True
+
+  sensor.ha_uptime:
+    friendly_name: 'HA Uptime'
+    emulated_hue_hidden: True
+    hidden: False
+    homebridge_hidden: True
+
+
+  # Group Ordering
+  group.default_view:
+    order: 1
+  group.Weather:
+    order: 2
+  group.lights_view:
+    order: 3
+  group.den_view:
+    order: 4
+  group.kitchen_view:
+    order: 5
+  group.office_view:
+    order: 6
+  group.bedroom_view:
+    order: 7
+  group.hall_view:
+    order: 8
+  group.outdoor_view:
+    order: 9
+  group.server_view:
+    order: 10
+  group.home_monitoring_view:
+    order: 11

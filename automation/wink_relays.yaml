@@ -1,0 +1,63 @@
+#Wink Relays
+
+#Office
+- id: officerelaytopbutton
+  hide_entity: True
+  alias: Office Relay Top Button Pressed
+  trigger:
+    platform: state
+    entity_id: binary_sensor.office_relays_top_button
+    from: 'off'
+    to: 'on'
+  action:
+    entity_id: light.office_overhead
+    service: light.toggle
+
+- id: officerelaybottombutton
+  hide_entity: True
+  alias: Office Relay Bottom Button Pressed
+  trigger:
+    platform: state
+    entity_id: binary_sensor.office_relays_bottom_button
+    from: 'off'
+    to: 'on'
+  action:
+    entity_id: light.desk_lamp
+    service: light.toggle
+
+#Kitchen
+- id: kitchenrelaytopbutton
+  hide_entity: True
+  alias: Kitchen Relay Bottom Button Pressed
+  trigger:
+    platform: state
+    entity_id: binary_sensor.kitchen_relays_top_button
+    from: 'off'
+    to: 'on'
+  action:
+    entity_id: light.kitchen_overhead_57
+    service: light.toggle
+
+#Bedroom
+- id: bedroomrelaytopbutton
+  hide_entity: True
+  alias: Bedroom Relay Top Button Pressed
+  trigger:
+    platform: state
+    entity_id: binary_sensor.bedroom_relays_top_button
+    from: 'off'
+    to: 'on'
+  action:
+    entity_id: light.bedroom_overhead
+    service: light.toggle
+- id: bedroomrelaybottombutton
+  hide_entity: True
+  alias: Bedroom Relay Bottom Button Pressed
+  trigger:
+    platform: state
+    entity_id: binary_sensor.bedroom_relays_bottom_button
+    from: 'off'
+    to: 'on'
+  action:
+    entity_id: light.bedroom_lamps  
+    service: light.toggle

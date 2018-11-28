@@ -1,0 +1,3 @@
+  Crime:
+    entities: 
+    - sensor.crimereports

@@ -1,0 +1,57 @@
+#Minimote 1
+- id: minimotebutton1
+  hide_entity: True
+  alias: Minimote Button 1 Pressed
+  trigger:
+  - event_data:
+      entity_id: zwave.aeotec_dsa03202_minimote
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  action:
+  - alias: Toggle
+    data:
+      entity_id: group.Both_Bedside_Lamps
+    service: switch.toggle
+- id: minimotebutton2
+  hide_entity: True
+  alias: Minimote Button 2 Pressed
+  trigger:
+  - event_data:
+      entity_id: zwave.aeotec_dsa03202_minimote
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  action:
+  - alias: Toggle
+    data:
+      entity_id: light.reading_lamp
+    service: light.toggle
+- id: minimotebutton3
+  hide_entity: True
+  alias: Minimote Button 3 Pressed
+  trigger:
+  - event_data:
+      entity_id: zwave.aeotec_dsa03202_minimote
+      scene_id: 3
+    event_type: zwave.scene_activated
+    platform: event
+  action:
+  - alias: Toggle
+    data:
+      entity_id: switch.hall_lamp_switch
+    service: switch.toggle
+- id: minimotebutton4
+  hide_entity: True
+  alias: Minimote Button 4 Pressed
+  trigger:
+  - event_data:
+      entity_id: zwave.aeotec_dsa03202_minimote
+      scene_id: 4
+    event_type: zwave.scene_activated
+    platform: event
+  action:
+  - alias: Toggle
+    data:
+      entity_id: switch.fireplace
+    service: switch.toggle

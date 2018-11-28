@@ -1,0 +1,23 @@
+office_view:
+  name: Office
+  view: yes
+  entities:
+    - group.office_group
+
+
+office_group:
+  name: Office
+  control: hidden
+  entities:
+    - light.office_overhead
+    - light.office_bath_sink
+    - light.office_desk_strip
+    - light.office_lamp
+    - light.desk_led_strip_level
+    - light.office_tv_backlight
+    - light.desk_accent
+    - light.desk_lamp
+    - binary_sensor.office_occupancy
+    - sensor.office_temperature
+    - binary_sensor.office_occupancy
+    

@@ -1,0 +1,99 @@
+- id: Flic1singleclick
+  alias: Flic 1 Single Click
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic1singleclick
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog11
+      message: >
+        {{ trigger.data.a }}
+- id: Flic1doubleclick
+  alias: Flic 1 Double Click
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic1doubleclick
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog12
+      message: >
+        {{ trigger.data.a }}
+- id: Flic1hold
+  alias: Flic 1 Hold
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic1hold
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog1h
+      message: >
+        {{ trigger.data.a }}
+- id: Flic2singleclick
+  alias: Flic 2 Single Click
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic2singleclick
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog21
+      message: >
+        {{ trigger.data.a }}
+- id: Flic2doubleclick
+  alias: Flic 2 Double Click
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic2doubleclick
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog22
+      message: >
+        {{ trigger.data.a }}
+- id: Flic2hold
+  alias: Flic 2 Hold
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic2hold
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog2h
+      message: >
+        {{ trigger.data.a }}
+- id: Flic3singleclick
+  alias: Flic 3 Single Click
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic3singleclick
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog31
+      message: >
+        {{ trigger.data.a }}
+- id: Flic3doubleclick
+  alias: Flic 3 Double Click
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic3doubleclick
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog32
+      message: >
+        {{ trigger.data.a }}
+- id: Flic3hold
+  alias: Flic 3 Hold
+  trigger:
+    platform: webhook
+    webhook_id: 3e33481d72b34db983869c2a463d3887-flic3hold
+  action:
+    service: logbook.log
+    data_template:
+      name: testlog3h
+      message: >
+        {{ trigger.data.a }}

@@ -1,0 +1,11 @@
+  - platform: harmony
+    name: Living Room Harmony
+    host: 192.168.1.50
+
+  - platform: harmony
+    name: Office Harmony
+    host: 192.168.1.52
+
+  - platform: harmony
+    name: Bedroom
+    host: 192.168.1.51
