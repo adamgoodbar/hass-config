@@ -1,6 +1,8 @@
 - platform: darksky
   name: Weather
   api_key: !secret skydark 
+  forecast:
+    - 0
   monitored_conditions:
     - temperature
     - apparent_temperature
