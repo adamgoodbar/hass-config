@@ -19,7 +19,7 @@
   action:
     - service: switch.turn_off
       data:
-        entity_id: switch.bedroom_window_light
+        entity_id: switch.outdoor_lights
     - service: switch.turn_off
       data:
-        entity_id: switch.outdoor_lights
+        entity_id: switch.bedroom_window_light
