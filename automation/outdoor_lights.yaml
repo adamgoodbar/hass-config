@@ -5,21 +5,52 @@
     event: sunset
     offset: '+00:00:00'
   action:
-    - service: switch.turn_on
-      data:
-        entity_id: switch.bedroom_window_light
-    - service: switch.turn_on
-      data:
-        entity_id: switch.outdoor_lights
+    service: switch.turn_on
+    data:
+      entity_id: switch.bedroom_window_light
 - id: "TurnsLightsOffat10"
   alias: Turn off at 10 PM
   trigger:
       platform: time
       at: '22:00:00'
   action:
-    - service: switch.turn_off
-      data:
-        entity_id: switch.outdoor_lights
-    - service: switch.turn_off
-      data:
-        entity_id: switch.bedroom_window_light
+    service: switch.turn_off
+    data:
+      entity_id: switch.bedroom_window_light  
+- id: "TurnxmasLightsOnAtDusk"
+  alias: Turn Christmas Lights on at Dusk
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '+00:00:00'
+  action:
+    service: switch.turn_on
+    data:
+      entity_id: switch.outdoor_lights
+- id: "TurnsxmasLightsOffat10"
+  alias: Turn off Christmas Lights at 10 PM
+  trigger:
+      platform: time
+      at: '22:00:00'
+  action:
+    service: switch.turn_off
+    data:
+      entity_id: switch.outdoor_lights  
+- id: "TurnxmasLightsOnAtMorning"
+  alias: Turn Christmas Lights on at Dusk
+  trigger:
+      platform: time
+      at: '5:30:00'
+  action:
+    service: switch.turn_on
+    data:
+      entity_id: switch.outdoor_lights
+- id: "TurnsxmasLightsOffat8am"
+  alias: Turn off Christmas Lights at 8 am
+  trigger:
+      platform: time
+      at: '8:00:00'
+  action:
+    service: switch.turn_off
+    data:
+      entity_id: switch.outdoor_lights  
