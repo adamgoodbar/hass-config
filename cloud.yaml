@@ -115,6 +115,7 @@ google_actions:
       include_domains:
         - switch
         - light
+        - lock
       exclude_entities:
         - switch.aeotec_zw130_wallmote_quad_switch
         - light.hall
