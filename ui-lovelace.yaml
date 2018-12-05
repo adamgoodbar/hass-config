@@ -77,13 +77,39 @@ views:
           entities:
             - sensor.weather_hourly_summary
             - sensor.weather_apparent_temperature
-            - sensor.weather_daily_high_apparent_temperature
-            - sensor.weather_daily_low_apparent_temperature
+            - sensor.weather_daytime_high_temperature_0
+            - sensor.weather_overnight_low_temperature_0
             - sensor.weather_precip
             - sensor.weather_precip_probability
             - sensor.weather_humidity
             - sensor.weather_summary
             - sun.sun
+  - title: Security
+    cards:
+      - type: vertical-stack
+        cards:
+        - type: glance
+          title: "Security"
+          entities:
+            - lock.schlage_deadbolt_30
+            - binary_sensor.bedroom_left_window
+            - binary_sensor.bedroom_right_window
+            - binary_sensor.diningroom_left_window
+            - binary_sensor.diningroom_right_window
+            - binary_sensor.den_left_window
+            - binary_sensor.den_right_window
+            - binary_sensor.kitchen_window
+            - binary_sensor.office_window
+      - type: picture-entity
+        entity: camera.den
+      - type: picture-entity
+        entity: camera.upstairs_hall
+      - type: picture-entity
+        entity: camera.kitchen
+      - type: picture-entity
+        entity: camera.back_door
+      - type: picture-entity
+        entity: camera.garage
   - title: Lights
     cards:
       - type: custom:monster-card
@@ -146,14 +172,6 @@ views:
         entities:
           - switch.laundry_room_fan_12
           - switch.whole_house_fan_11
-  - title: Home Monitoring
-    cards:
-      - type: entities
-        title: Home Power Usage
-        show_header_toggle: false
-        entities:
-          - sensor.energy_usage
-          - sensor.daily_usage
   - title: Outdoor
     cards:
       - type: entities
