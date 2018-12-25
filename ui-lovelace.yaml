@@ -7,20 +7,6 @@ views:
   - title: Home
     cards:
       - type: vertical-stack
-        cards:
-        - type: glance
-          title: "Security"
-          entities:
-            - lock.schlage_deadbolt_30
-            - binary_sensor.bedroom_left_window
-            - binary_sensor.bedroom_right_window
-            - binary_sensor.diningroom_left_window
-            - binary_sensor.diningroom_right_window
-            - binary_sensor.den_left_window
-            - binary_sensor.den_right_window
-            - binary_sensor.kitchen_window
-            - binary_sensor.office_window
-      - type: vertical-stack
         title: "Cameras"
         panel: true
         cards:
@@ -49,11 +35,6 @@ views:
               title: Garage
               entity: camera.garage
               show_state: false
-          - type: glance
-            title: Crime
-            show_header_toggle: true
-            entities:
-              - sensor.crimereports
       - type: vertical-stack
         cards:
         - type: thermostat
@@ -71,6 +52,18 @@ views:
           - sensor.home_humidity
       - type: vertical-stack
         cards:
+        - type: glance
+          title: "Security"
+          entities:
+            - lock.schlage_deadbolt_30
+            - binary_sensor.bedroom_left_window
+            - binary_sensor.bedroom_right_window
+            - binary_sensor.diningroom_left_window
+            - binary_sensor.diningroom_right_window
+            - binary_sensor.den_left_window
+            - binary_sensor.den_right_window
+            - binary_sensor.kitchen_window
+            - binary_sensor.office_window
         - type: entities
           title: Weather
           show_header_toggle: true
@@ -110,6 +103,11 @@ views:
         entity: camera.back_door
       - type: picture-entity
         entity: camera.garage
+      - type: glance
+        title: Crime
+        show_header_toggle: true
+        entities:
+          - sensor.crimereports
   - title: Lights
     cards:
       - type: custom:monster-card

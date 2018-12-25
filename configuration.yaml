@@ -121,7 +121,7 @@ binary_sensor: !include_dir_merge_list binary_sensors/
 #input_select: !include_dir_merge_named input_select
 sensor: !include_dir_merge_list sensor
 light: !include_dir_merge_list light
-remote: !include remote.yaml
+# remote: !include remote.yaml
   
 
 hue:
