@@ -21,7 +21,7 @@
     event_type: zwave.scene_activated
     event_data:
       entity_id: zwave.aeotec_zw130_wallmote_quad
-      scene_id: 1
+      scene_id: 2
       scene_data: 0
   action:
     service: switch.toggle
