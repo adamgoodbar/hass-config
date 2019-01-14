@@ -1,0 +1,30 @@
+- alias: Garage Wallmote - 1
+  hide_entity: true
+  initial_state: true
+  trigger:
+    platform: event
+    event_type: zwave.scene_activated
+    event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 1
+      scene_data: 0
+  action:
+    service: switch.toggle
+    data_template:
+      entity_id:
+        - switch.garage_overhead
+- alias: Garage Wallmote - 2
+  hide_entity: true
+  initial_state: true
+  trigger:
+    platform: event
+    event_type: zwave.scene_activated
+    event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 1
+      scene_data: 0
+  action:
+    service: switch.toggle
+    data_template:
+      entity_id:
+        - switch.workbench_overhead
