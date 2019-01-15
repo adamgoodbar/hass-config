@@ -30,3 +30,7 @@
   
   #- platform: ring
 
+  - platform: mjpeg
+    name: OctoPrint
+    still_image_url: http://octopi.home.goodbar.io/webcam/?action=snapshot
+    mjpeg_url: http://octopi.home.goodbar.io/webcam/?action=stream

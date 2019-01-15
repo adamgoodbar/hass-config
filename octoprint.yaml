@@ -1,0 +1,5 @@
+- host: octoprint.home.goodbar.io
+  api_key: YOUR_API_KEY
+  name: Prusa Mk3
+  bed: true
+  number_of_tools: 1
