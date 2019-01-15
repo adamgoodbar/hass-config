@@ -1,5 +1,5 @@
 - host: octopi.home.goodbar.io
-  api_key: YOUR_API_KEY
+  api_key: !secret octopi_api
   name: Prusa Mk3
   bed: true
   number_of_tools: 1
