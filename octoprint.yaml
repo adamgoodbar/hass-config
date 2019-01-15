@@ -1,4 +1,4 @@
-- host: octoprint.home.goodbar.io
+- host: octopi.home.goodbar.io
   api_key: YOUR_API_KEY
   name: Prusa Mk3
   bed: true
