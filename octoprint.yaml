@@ -4,3 +4,4 @@
   bed: true
   number_of_tools: 1
   ssl: true
+  port: 443
