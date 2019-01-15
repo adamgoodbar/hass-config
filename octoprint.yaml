@@ -3,5 +3,4 @@
   name: Prusa Mk3
   bed: true
   number_of_tools: 1
-  ssl: true
-  port: 443
+  ssl: false
