@@ -1,0 +1,15 @@
+- id: fibarosingleclick
+  hide_entity: True
+  alias: Fibaro Single Click Pressed
+  trigger:
+  - event_data:
+      entity_id: zwave.fibaro_system_fgpb101_button
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  action:
+  - alias: Toggle
+    data_template:
+      name: testlog12
+      message: "Button SIngle Clicked"
+    service: logbook.log
