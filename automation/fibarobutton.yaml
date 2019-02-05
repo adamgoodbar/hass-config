@@ -8,8 +8,8 @@
     event_type: zwave.scene_activated
     platform: event
   action:
-  - alias: Toggle
-    data_template:
-      name: testlog12
-      message: "Button SIngle Clicked"
-    service: logbook.log
+  - alias: Notify
+    service: notify.pushbullet
+    data:
+      title: "Help Jacqueline!"
+      message: "Don't miss this!"

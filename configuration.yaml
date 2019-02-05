@@ -191,6 +191,11 @@ wink:
 
 octoprint: !include octoprint.yaml
 
+notify:
+  - name: pushbullet
+    platform: pushbullet
+    api_key: !secret pushbullet_api_key
+
 #sense:
 #  email: !secret sense_username
 #  password: !secret sense_password
