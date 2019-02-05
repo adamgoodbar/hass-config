@@ -9,7 +9,12 @@
     platform: event
   action:
   - alias: Notify
-    service: notify.pushbullet
+    service: notify.telegram
     data:
       title: "Help Jacqueline!"
       message: "Don't miss this!"
+  - alias: Light
+    service: light.turn_on
+    data_template:
+      entity_id:
+        - light.office_overhead

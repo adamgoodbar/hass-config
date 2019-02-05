@@ -195,6 +195,15 @@ notify:
   - name: pushbullet
     platform: pushbullet
     api_key: !secret pushbullet_api_key
+  - name: telegram
+    platform: telegram
+    chat_id: !secret telegram_chatid_1
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_api_key
+    allowed_chat_ids:
+      - !secret telegram_chatid_1
 
 #sense:
 #  email: !secret sense_username
