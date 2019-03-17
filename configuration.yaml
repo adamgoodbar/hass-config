@@ -14,6 +14,10 @@ homeassistant:
   customize_glob: !include customize_glob.yaml
   auth_providers:
    - type: trusted_networks
+    trusted_networks:
+      - 127.0.0.1
+      - 172.30.32.0/23
+      - ::1
    - type: homeassistant
 
 # Enables configuration UI
@@ -27,9 +31,7 @@ cloud: !include cloud.yaml
 http:
   #api_password: !secret http_api_password
   trusted_networks:
-    - 127.0.0.1
-    - 172.30.32.0/23
-    - ::1
+
   #ip_ban_enabled: True
   #login_attempts_threshold: 5
   base_url: hassio.home.adamgoodbar.com:8123
