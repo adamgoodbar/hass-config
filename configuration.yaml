@@ -207,6 +207,15 @@ telegram_bot:
     allowed_chat_ids:
       - 218698090
 
+speedtestdotnet:
+  scan_interval:
+    minutes: 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+
 #sense:
 #  email: !secret sense_username
 #  password: !secret sense_password
