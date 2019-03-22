@@ -13,10 +13,10 @@ homeassistant:
   customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
   auth_providers:
+    - type: homeassistant
     - type: trusted_networks
       trusted_networks:
         - 172.30.32.0/23
-    - type: homeassistant
 
 # Enables configuration UI
 config:
