@@ -56,14 +56,14 @@ history:
 
 panel_iframe: !include panels.yaml
 
-influxdb:
-  host: a0d7b954-influxdb
-  port: 8086
-  database: homeassistant
-  username: homeassistant
-  password: !secret influxdb_password
-  max_retries: 10
-  default_measurement: state
+#influxdb:
+  #host: a0d7b954-influxdb
+  #port: 8086
+  #database: homeassistant
+  #username: homeassistant
+  #password: !secret influxdb_password
+  #max_retries: 10
+  #default_measurement: state
 
 recorder:
   db_url: !secret recorder_db_url
@@ -79,11 +79,11 @@ recorder:
       - sensor.cpu_use
       - sensor.ram_free
       - sensor.ram_use
-      - sensor.date__time
+      - sensor.date_time
       - sensor.date
       - sensor.internet_time
       - sensor.time_utc
-      - sensor.time__date
+      - sensor.time_date
       - sensor.date 
       - sensor.average_load_15m
       - sensor.average_load_5m 

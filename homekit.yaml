@@ -26,7 +26,7 @@ filter:
     - light.bedroom_overhead_1
     - light.bedroom_overhead_2
   #Smoke Detectors
-    - switch.smoke__co_sensor_14
+    - switch.smoke_co_sensor_14
     - switch.bedroom_smoke_detect_17
   #Sensor on/offs
     - switch.master_bath_sensor_33
