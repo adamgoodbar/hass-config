@@ -37,4 +37,4 @@
 
   - platform: ffmpeg
     name: Front Porch
-    stream_source: -rtsp_transport tcp -i rtsp://192.168.2.26:8554/unicast
+    input: -rtsp_transport tcp -i rtsp://192.168.2.26:8554/unicast
