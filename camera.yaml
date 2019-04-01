@@ -35,6 +35,6 @@
     still_image_url: http://octopi.home.goodbar.io/webcam/?action=snapshot
     mjpeg_url: http://octopi.home.goodbar.io/webcam/?action=stream
 
-  - platform: ffmpg
+  - platform: ffmpeg
     name: Front Porch
     stream_source: -rtsp_transport tcp -i rtsp://192.168.2.26:8554/unicast
