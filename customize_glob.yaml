@@ -2,16 +2,8 @@
 #Hide the Wink Relay Sensors, only want to use buttons for events 
   "binary_sensor.office_relay*":
     hidden: true
-  "binary_sensor.kitchen_relay*":
-    hidden: true
-  "binary_sensor.bedroom_relay*":
-    hidden: true
   "sensor.office_relay*":
     hidden: true
-  "sensor.kitchen_relay*":
-    hidden: true
-  "sensor.bedroom_relay*":
-    hidden: true  
   "binary_sensor.gang*":
     hidden: true
 

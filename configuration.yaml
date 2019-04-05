@@ -183,12 +183,6 @@ scene:
   platform: lifx_cloud
   token: !secret lifx_token
 
-wink:
-  email: !secret wink_email
-  password: !secret wink_password
-  client_id: !secret wink_client_id
-  client_secret: !secret wink_client_secret
-
 octoprint: !include octoprint.yaml
 
 notify:
