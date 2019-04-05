@@ -30,16 +30,9 @@
     - light.jacqueline_lamp
 
 - platform: group
-  name: Bedroom Overhead
-  entities:
-    - light.bedroom_overhead_1
-    - light.bedroom_overhead_2
-
-- platform: group
   name: Bedroom Lights
   entities:
-    - light.bedroom_overhead_1
-    - light.bedroom_overhead_2
+    - light.bedroom_overhead
     - light.adam_lamp
     - light.jacqueline_lamp
     - light.bedroom_lamp

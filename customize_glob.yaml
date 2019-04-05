@@ -12,8 +12,6 @@
     hidden: true
   "light.master_bath_sink_*":
     hidden: true
-  "light.bedroom_overhead_*":
-    hidden: true
   "light.office_bathroom_*":
     hidden: true
   "light.half_bath_sink_*":

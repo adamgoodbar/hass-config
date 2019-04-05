@@ -16,15 +16,11 @@ filter:
     - light.master_bath_sink_4
     - light.master_bath_sink_5
     - light.master_bath_sink_6
-    - light.bedroom_downlight_1
-    - light.bedroom_downlight_2
     - light.office_bathroom_1
     - light.office_bathroom_2
     - light.office_bathroom_3
     - light.half_bath_sink_1
     - light.half_bath_sink_2
-    - light.bedroom_overhead_1
-    - light.bedroom_overhead_2
   #Smoke Detectors
     - switch.smoke_co_sensor_14
     - switch.bedroom_smoke_detect_17
