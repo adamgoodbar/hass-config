@@ -12,7 +12,8 @@ pool:
 steps:
 - script: |
     python -m pip install --upgrade pip setuptools wheel django
-    pip3 install homeassistant
+    pip install --upgrade pip
+    pip install homeassistant
   displayName: 'Install pip and latest home assistant'
 
 - script: |
