@@ -20,5 +20,5 @@
     - precip_type
     - ozone
     - moon_phase
-  update_interval:
+  scan_interval:
     minutes: 30
