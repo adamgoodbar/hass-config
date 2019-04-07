@@ -10,10 +10,12 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: |
+    python -m pip install
+    pip3 install homeassistant
+  displayName: 'Install pip and latest home assistant'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    mv travis_secrets.yaml secrets.yaml
+    hass -c . --script check_config
+  displayName: 'Validate Configuration' 
