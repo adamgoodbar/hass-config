@@ -11,8 +11,7 @@
   binary_sensor.garage_sensor:
     hidden: true
   binary_sensor.server_closet_sensor:
-    hidden: true
-  
+    hidden: true  
   
   #Overrides of Hidden Sensors from Wildcards
   sensor.garage_temperature:
