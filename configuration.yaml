@@ -110,7 +110,7 @@ sun:
 
 # Text to speech
 tts:
-  platform: google
+  platform: google_translate
 
 ##Includes
 group: !include_dir_merge_named groups/
