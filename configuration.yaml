@@ -24,6 +24,8 @@ config:
 #enables HASSIO
 hassio:
 
+mobile_app:
+
 cloud: !include cloud.yaml
 
 http:
