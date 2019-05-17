@@ -36,3 +36,11 @@
   - platform: ffmpeg
     name: Front Porch
     input: !secret front_door_camera_url
+
+  - platform: ffmpeg
+    name: Garage Left
+    input: !secret garage_camera_url_1
+
+  - platform: ffmpeg
+    name: Garage Right
+    input: !secret garage_camera_url_2
