@@ -110,6 +110,9 @@ logbook:
 # Track the sun
 sun:
 
+#FFMpeg Enable
+ffmpeg:
+
 # Text to speech
 tts:
   platform: google_translate
@@ -177,14 +180,6 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
 
-#ring:
-#  username: !secret ring_username
-#  password: !secret ring_password
-
-scene:
-  platform: lifx_cloud
-  token: !secret lifx_token
-
 wink:
   email: !secret wink_email
   password: !secret wink_password
@@ -214,9 +209,3 @@ speedtestdotnet:
     - ping
     - download
     - upload
-
-
-#sense:
-#  email: !secret sense_username
-#  password: !secret sense_password
-#  timeout: 5
