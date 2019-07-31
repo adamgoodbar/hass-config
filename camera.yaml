@@ -27,6 +27,12 @@
     username: !secret foscam_username
     password: !secret foscam_password
     name: Garage
+
+  - platform: foscam
+    ip: 192.168.2.29
+    username: !secret foscam_username
+    password: !secret foscam_password
+    name: Den Back
   
   - platform: mjpeg
     name: OctoPrint
