@@ -40,9 +40,14 @@
   - alias: Notify
     service: notify.telegram
     data:
-      title: "Testing!"
-      message: "Button 2 click!"
-  - alias: Notify        
+      title: "Wifey Needs Something!"
+      message: "Stop it with the video game!"
+  - alias: Light
+    service: light.turn_on
+    data_template:
+      entity_id:
+        - light.office_overhead
+  - alias: Notify1        
     service: logbook.log
     data_template:
       name: flic21
