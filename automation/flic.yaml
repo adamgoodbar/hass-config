@@ -37,11 +37,11 @@
     platform: webhook
     webhook_id: 3e33481d72b34db983869c2a463d3887-flic2singleclick
   action:
-  - alias: Notify
-    service: notify.telegram
-    data:
-      title: "Testing!"
-      message: "Button 2 click!"
+    - alias: Notify
+      service: notify.telegram
+      data:
+        title: "Testing!"
+        message: "Button 2 click!"
   alias: Flic 2 Double Click
   trigger:
     platform: webhook
