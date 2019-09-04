@@ -11,8 +11,8 @@
   - alias: Notify
     service: notify.telegram
     data:
-      title: "Help Jacqueline!"
-      message: "Don't miss this!"
+      title: "Wifey Needs Something!"
+      message: "Stop it with the video game!"
   - alias: Light
     service: light.turn_on
     data_template:
