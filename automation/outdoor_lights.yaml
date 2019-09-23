@@ -14,9 +14,14 @@
       platform: time
       at: '22:00:00'
   action:
+  - alias: Cafe Lights
     service: switch.turn_off
     data:
-      entity_id:  switch.front_porch_cafe_lights  
+      entity_id:  switch.front_porch_cafe_lights
+  - alias: Porch Lights
+    service: switch.turn_off
+    data:
+      entity_id:  switch.switch.front_porch_45 
 - id: "TurnLightsOnInMorning"
   alias: Turn Christmas Lights on at Dusk
   trigger:
@@ -32,6 +37,11 @@
       platform: time
       at: '8:00:00'
   action:
+  - alias: Cafe Lights
     service: switch.turn_off
     data:
-      entity_id:  switch.front_porch_cafe_lights  
+      entity_id:  switch.front_porch_cafe_lights
+  - alias: Porch Lights
+    service: switch.turn_off
+    data:
+      entity_id:  switch.switch.front_porch_45 
