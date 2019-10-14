@@ -31,12 +31,7 @@ mobile_app:
 cloud: !include cloud.yaml
 
 http:
-  #api_password: !secret http_api_password
-  trusted_networks:
-
-  #ip_ban_enabled: True
-  #login_attempts_threshold: 5
-  base_url: hassio.home.goodbar.io:8123
+  base_url: http://hassio.home.goodbar.io:8123
 
 # Checks for available updates
 # Note: This component will send some information about your system to
