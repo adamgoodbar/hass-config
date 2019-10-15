@@ -21,7 +21,6 @@ homeassistant:
 # Enables configuration UI
 config:
 
-#enables HASSIO
 hassio:
 
 system_health:
@@ -29,9 +28,6 @@ system_health:
 mobile_app:
 
 cloud: !include cloud.yaml
-
-http:
-  base_url: http://hassio.home.goodbar.io:8123
 
 # Checks for available updates
 # Note: This component will send some information about your system to
