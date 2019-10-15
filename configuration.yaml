@@ -43,7 +43,7 @@ updater:
   # include_used_components: true
 
 # Discover some devices automatically
-#discovery:
+discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -124,6 +124,8 @@ ecobee:
   api_key: !secret ecobee_api_key
 
 ios:
+
+default_config:
 
 logger: 
   default: info
