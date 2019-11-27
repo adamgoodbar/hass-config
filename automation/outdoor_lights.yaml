@@ -61,13 +61,13 @@
     service: switch.turn_off
     data:
       entity_id:  switch.front_porch_cafe_lights
-  - alias: Porch Lights
-    service: switch.turn_off
-    data:
-      entity_id:  switch.switch.front_porch_45 
   - alias: Christmas Lights
     service: switch.turn_off
     data:
       entity_id:  
       - switch.holiday_lights
       - switch.bedroom_window_light
+  - alias: Porch Lights
+    service: switch.turn_off
+    data:
+      entity_id:  switch.switch.front_porch_45 
