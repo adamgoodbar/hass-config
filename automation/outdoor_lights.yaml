@@ -8,6 +8,11 @@
     service: switch.turn_on
     data:
       entity_id:  switch.front_porch_cafe_lights
+  - alias: Christmas Lights
+    service: switch.turn_on
+    data:
+      entity_id:  switch.holiday_lights
+      entity_id:  switch.bedroom_window_light
 - id: "TurnsLightsOffat10"
   alias: Turn off at 10 PM
   trigger:
@@ -18,6 +23,11 @@
     service: switch.turn_off
     data:
       entity_id:  switch.front_porch_cafe_lights
+  - alias: Christmas Lights
+    service: switch.turn_off
+    data:
+      entity_id:  switch.holiday_lights
+      entity_id:  switch.bedroom_window_light
   - alias: Porch Lights
     service: switch.turn_off
     data:
@@ -31,6 +41,11 @@
     service: switch.turn_on
     data:
       entity_id:  switch.front_porch_cafe_lights
+  - alias: Christmas Lights
+    service: switch.turn_on
+    data:
+      entity_id:  switch.holiday_lights
+      entity_id:  switch.bedroom_window_light
 - id: "TurnLightsffAtDawn"
   alias: Turn off Christmas Lights at 8 am
   trigger:
@@ -45,3 +60,8 @@
     service: switch.turn_off
     data:
       entity_id:  switch.switch.front_porch_45 
+  - alias: Christmas Lights
+    service: switch.turn_off
+    data:
+      entity_id:  switch.holiday_lights
+      entity_id:  switch.bedroom_window_light
