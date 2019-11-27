@@ -5,9 +5,16 @@
     event: sunset
     offset: '+00:00:00'
   action:
+  - alias: Cafe Lights
     service: switch.turn_on
     data:
       entity_id:  switch.front_porch_cafe_lights
+  - alias: Christmas Lights
+    service: switch.turn_on
+    data:
+      entity_id:  
+      - switch.holiday_lights
+      - switch.bedroom_window_light
 - id: "TurnsLightsOffat10"
   alias: Turn off at 10 PM
   trigger:
@@ -18,6 +25,12 @@
     service: switch.turn_off
     data:
       entity_id:  switch.front_porch_cafe_lights
+  - alias: Christmas Lights
+    service: switch.turn_off
+    data:
+      entity_id:  
+      - switch.holiday_lights
+      - switch.bedroom_window_light
   - alias: Porch Lights
     service: switch.turn_off
     data:
@@ -28,9 +41,16 @@
       platform: time
       at: '05:45:00'
   action:
+  - alias: Cafe Lights
     service: switch.turn_on
     data:
       entity_id:  switch.front_porch_cafe_lights
+  - alias: Christmas Lights
+    service: switch.turn_on
+    data:
+      entity_id:  
+      - switch.holiday_lights
+      - switch.bedroom_window_light
 - id: "TurnLightsffAtDawn"
   alias: Turn off Christmas Lights at 8 am
   trigger:
@@ -45,3 +65,9 @@
     service: switch.turn_off
     data:
       entity_id:  switch.switch.front_porch_45 
+  - alias: Christmas Lights
+    service: switch.turn_off
+    data:
+      entity_id:  
+      - switch.holiday_lights
+      - switch.bedroom_window_light
