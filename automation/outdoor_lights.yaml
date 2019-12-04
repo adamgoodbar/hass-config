@@ -50,7 +50,6 @@
     data:
       entity_id:  
       - switch.holiday_lights
-      - switch.bedroom_window_light
 - id: "TurnLightsffAtDawn"
   alias: Turn off Christmas Lights at 8 am
   trigger:
