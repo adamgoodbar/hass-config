@@ -1,0 +1,74 @@
+- id: "TurnLightsOnAtDusk"
+  alias: Turn on at Dusk
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '+00:00:00'
+  action:
+  - alias: Bedroom Lamps
+    service: light.turn_on
+    data:
+      entity_id:  light.bedroom_lamps
+  - alias: Kitchen Overhead
+    service: light.turn_on
+    data:
+      entity_id:  
+      - light.kitchen_overhead_57
+- id: "TurnsLightsOffat8"
+  alias: Turn off at 8 PM
+  trigger:
+      platform: time
+      at: '20:00:00'
+  action:
+  - alias: Kitchen Overhead
+    service: light.turn_off
+    data:
+      entity_id:  
+      - light.kitchen_overhead_57
+- id: "TurnsLightsOffat10"
+  alias: Turn off at 10 PM
+  trigger:
+      platform: time
+      at: '22:00:00'
+  action:
+  - alias: Bedroom Lamps
+    service: light.turn_off
+    data:
+      entity_id:  light.bedroom_lamps
+- id: "TurnLightsOnAtDawn"
+  alias: Turn on at Dawn
+  trigger:
+    platform: sun
+    event: sunrise
+    offset: '-00:15:00'
+  action:
+  - alias: Bedroom Lamps
+    service: light.turn_on
+    data:
+      entity_id:  light.bedroom_lamps
+  - alias: Kitchen Overhead
+    service: light.turn_on
+    data:
+      entity_id:  
+      - light.kitchen_overhead_57
+- id: "TurnsLightsOffat8am"
+  alias: Turn off at 8 AM
+  trigger:
+      platform: time
+      at: '8:00:00'
+  action:
+  - alias: Kitchen Overhead
+    service: light.turn_off
+    data:
+      entity_id:  
+      - light.kitchen_overhead_57
+- id: "TurnsLightsOffat10am"
+  alias: Turn off at 10 AM
+  trigger:
+      platform: time
+      at: '10:00:00'
+  action:
+  - alias: Bedroom Lamps
+    service: light.turn_off
+    data:
+      entity_id:  light.bedroom_lamps
