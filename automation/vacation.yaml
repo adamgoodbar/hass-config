@@ -1,5 +1,5 @@
-- id: "TurnLightsOnAtDusk"
-  alias: Turn on at Dusk
+- id: "VacTurnLightsOnAtDusk"
+  alias: Vacation - Turn on at Dusk
   trigger:
     platform: sun
     event: sunset
@@ -14,8 +14,8 @@
     data:
       entity_id:  
       - light.kitchen_overhead_57
-- id: "TurnsLightsOffat8"
-  alias: Turn off at 8 PM
+- id: "VacTurnsLightsOffat8"
+  alias: Vacation - Turn off at 8 PM
   trigger:
       platform: time
       at: '20:00:00'
@@ -25,8 +25,8 @@
     data:
       entity_id:  
       - light.kitchen_overhead_57
-- id: "TurnsLightsOffat10"
-  alias: Turn off at 10 PM
+- id: "VacTurnsLightsOffat10"
+  alias: Vacation - Turn off at 10 PM
   trigger:
       platform: time
       at: '22:00:00'
@@ -35,8 +35,8 @@
     service: light.turn_off
     data:
       entity_id:  light.bedroom_lamps
-- id: "TurnLightsOnAtDawn"
-  alias: Turn on at Dawn
+- id: "VacTurnLightsOnAtDawn"
+  alias: Vacation - Turn on at Dawn
   trigger:
     platform: sun
     event: sunrise
@@ -51,8 +51,8 @@
     data:
       entity_id:  
       - light.kitchen_overhead_57
-- id: "TurnsLightsOffat8am"
-  alias: Turn off at 8 AM
+- id: "VacTurnsLightsOffat8am"
+  alias: Vacation - Turn off at 8 AM
   trigger:
       platform: time
       at: '8:00:00'
@@ -62,8 +62,8 @@
     data:
       entity_id:  
       - light.kitchen_overhead_57
-- id: "TurnsLightsOffat10am"
-  alias: Turn off at 10 AM
+- id: "VacTurnsLightsOffat10am"
+  alias: Vacation - Turn off at 10 AM
   trigger:
       platform: time
       at: '10:00:00'
