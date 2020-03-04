@@ -21,10 +21,6 @@
       platform: time
       at: '22:00:00'
   action:
-  - alias: Cafe Lights
-    service: switch.turn_off
-    data:
-      entity_id:  switch.front_porch_cafe_lights
   - alias: Christmas Lights
     service: switch.turn_off
     data:
