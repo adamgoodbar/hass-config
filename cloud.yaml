@@ -27,6 +27,9 @@ alexa:
         - light.office_bathroom_1
         - light.office_bathroom_2
         - light.office_bathroom_3
+        - light.hall_downlight_1
+        - light.hall_downlight_2
+        - light.hall_downlight_3
     entity_config:
       light.kitchen_accent:
         name: "Kitchen Accent"
@@ -108,6 +111,8 @@ alexa:
         name: "Bedroom Overhead"
       light.bedroom_lights:
         name: "Bedroom Lights"
+      light.hall_downlights:
+        name: "Hall Downlights"
 google_actions:
     filter:
       include_domains:

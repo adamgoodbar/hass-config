@@ -49,3 +49,10 @@
   entities:
     - light.half_bath_sink_1
     - light.half_bath_sink_2
+
+- platform: group
+  name: Hall Downlights
+  entities:
+    - light.hall_downlight_1
+    - light.hall_downlight_2
+    - light.hall_downlight_3

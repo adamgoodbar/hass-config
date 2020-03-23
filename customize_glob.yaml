@@ -16,6 +16,8 @@
     hidden: true
   "light.half_bath_sink_*":
     hidden: true
+  "light.hall_downlight_*":
+    hidden: true
 
   #Homebridge Exposure
   "switch.*":
